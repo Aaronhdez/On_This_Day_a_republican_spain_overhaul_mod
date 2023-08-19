@@ -1,0 +1,12 @@
+﻿l_spanish:
+  SPR_counter_plot_actividades:0 "Suspicious activities in the army"
+  SPR_investigate_activities_north:0 "Investigate northern garrisons"
+  SPR_investigate_activities_north_tt:1 "\nPurge subversive elements in the northern regions\n"
+  SPR_investigate_activities_south:0 "Investigate southern garrisons"
+  SPR_investigate_activities_south_tt:1 "\nPurge subversive elements in the southern regions\n"
+  SPR_investigate_activities_center:0 "Investigate central garrisons"
+  SPR_investigate_activities_center_tt:1 "\nPurge subversive elements in the central regions\n"
+  SPR_investigate_activities_east:0 "Investigate eastern garrisons"
+  SPR_investigate_activities_east_tt:1 "\nPurge subversive elements in the eastern regions\n"
+  SPR_investigate_activities_end:0 "Strike at the source"
+  SPR_investigate_activities_end_tt:1 "\nSuppress the remnant plotters\n"

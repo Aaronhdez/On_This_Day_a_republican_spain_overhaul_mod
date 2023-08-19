@@ -19,6 +19,7 @@ focus_tree = {
 			add = 10
 			tag = SPR
 			has_dlc = "La Resistance"
+			NOT = { has_country_flag = civil_war_avoided }
 		}
 	}
 
@@ -13174,6 +13175,49 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = SPR_the_anti_fascist_crusade
+		}
+	}
+
+	focus = {
+		id = SPR_approach_the_DSG
+		available = {
+			has_country_flag = SPA_the_army_of_africa_flag
+			has_government = democratic
+		}
+		bypass = {
+			has_global_flag = spanish_civil_war
+		}
+		prerequisite = { 
+			focus = SPR_the_popular_front 
+		}
+		
+		icon = GFX_goal_generic_military_deal
+		x = 17
+		y = 1
+		offset = {
+			x = -14
+			y = 0
+			trigger = {
+				has_completed_focus = SPR_the_popular_front
+				has_global_flag = spanish_civil_war
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+			}
+		}
+		relative_position_id = SPR_the_popular_front
+		cost = 5
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_SPA_CIVIL_WAR}
+		completion_reward = {
+			add_political_power = 30
+			add_stability = -0.025
+			custom_effect_tooltip = SPR_dsg_reports_tt
+			hidden_effect = {
+				set_country_flag = SPR_counter_plot_actividades
+			}
 		}
 	}
 
